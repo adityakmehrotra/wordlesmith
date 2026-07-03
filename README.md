@@ -14,7 +14,7 @@ Considers every valid word a possible answer, so it never dead-ends on a real pu
 averages 4.52 guesses over all 14,855 valid words, and 3.60 on the classic 2,315-answer set). The
 core is pure standard library.
 
-<img src="docs/demo.gif" alt="wordlesmith playing along with a Wordle" width="760">
+<img src="https://raw.githubusercontent.com/adityakmehrotra/wordlesmith/main/docs/demo.gif" alt="wordlesmith playing along with a Wordle" width="760">
 
 </div>
 
@@ -66,7 +66,7 @@ Requires Python 3.10+.
 
 Auto-solve a known word:
 
-<img src="docs/solve.gif" alt="wordlesmith solve maven, then solve crane --curated" width="720">
+<img src="https://raw.githubusercontent.com/adityakmehrotra/wordlesmith/main/docs/solve.gif" alt="wordlesmith solve maven, then solve crane --curated" width="720">
 
 (`maven` is a real NYT answer that isn't in the original 2,315-word list, so a solver built only
 on that list would never find it. The default pool is every valid word, so this just works.)
@@ -132,7 +132,7 @@ guesses. Those hard words are almost never real NYT answers, so for actual daily
 number below is the realistic one; this table is the pessimistic "solve literally any valid word"
 figure.
 
-![Guess distribution by strategy](benchmarks/results/official/distribution_valid.png)
+![Guess distribution by strategy](https://raw.githubusercontent.com/adityakmehrotra/wordlesmith/main/benchmarks/results/official/distribution_valid.png)
 
 ### Secondary: the classic 2,315-answer set (`--curated`)
 
@@ -158,7 +158,7 @@ frequency baseline burns turns cycling through lookalikes (`slate`, `crony`, `bo
 
 <sub>Methodology: a game is a failure if unsolved in 6 guesses (counted as 7 in the mean).
 Deterministic strategies are reproducible; `random` uses a fixed seed. Full results and per-word
-data are in [`benchmarks/results/official/`](benchmarks/results/official); regenerate the primary
+data are in [`benchmarks/results/official/`](https://raw.githubusercontent.com/adityakmehrotra/wordlesmith/main/benchmarks/results/official); regenerate the primary
 with `python scripts/run_official_benchmark.py`. The primary `answers`-pool run takes about 10
 minutes per strategy on 9 cores; the curated `all`-pool run scores every valid word each turn and
 takes far longer, which is why it stays on the smaller curated set. Use `--sample N` for a quick
