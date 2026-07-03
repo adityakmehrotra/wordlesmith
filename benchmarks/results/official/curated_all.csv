@@ -1,0 +1,4 @@
+strategy,guess_pool,num_words,average,median,max,fails,fail_pct,turns_1,turns_2,turns_3,turns_4,turns_5,turns_6,turns_fail,wall_seconds,seed,package_version
+expected-size,all,2315,3.4812,3,5,0,0.0000,0,55,1130,1091,39,0,0,574.09,0,0.1.0
+minimax,all,2315,3.5732,4,6,0,0.0000,1,53,990,1162,107,2,0,530.64,0,0.1.0
+entropy,all,2315,3.4648,3,6,0,0.0000,0,44,1216,991,63,1,0,530.19,0,0.1.0

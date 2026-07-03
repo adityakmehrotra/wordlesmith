@@ -1,0 +1,10 @@
+{
+  "entropy|answers|curated": "raise",
+  "entropy|answers|valid": "tares",
+  "expected-size|answers|curated": "raise",
+  "expected-size|answers|valid": "lares",
+  "frequency|answers|curated": "slate",
+  "frequency|answers|valid": "sanes",
+  "minimax|answers|curated": "arise",
+  "minimax|answers|valid": "seria"
+}

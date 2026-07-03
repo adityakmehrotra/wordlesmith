@@ -1,0 +1,102 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wordlesmith"
+version = "0.1.0"
+description = "A Wordle solver with pluggable strategies and a strategy-comparison benchmark suite."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE.txt" }
+authors = [{ name = "Aditya Mehrotra", email = "adi1.mehrotra@gmail.com" }]
+keywords = ["wordle", "solver", "puzzle", "entropy", "benchmark", "game"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Games/Entertainment :: Puzzle Games",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+bench = ["matplotlib>=3.6"]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "ruff>=0.5",
+    "mypy>=1.8",
+    "build>=1.0",
+    "twine>=5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/adityakmehrotra/Wordle-Solver"
+Repository = "https://github.com/adityakmehrotra/Wordle-Solver"
+Issues = "https://github.com/adityakmehrotra/Wordle-Solver/issues"
+
+[project.scripts]
+wordlesmith = "wordlesmith.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/wordlesmith"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/wordlesmith",
+    "tests",
+    "docs",
+    "examples",
+    "scripts",
+    "benchmarks/results/official",
+    "README.md",
+    "LICENSE.txt",
+    "CHANGELOG.md",
+]
+exclude = [
+    "docs/blog-post.md",
+    "docs/paper-outline.md",
+    "benchmarks/results/official/raw",
+    "benchmarks/results/official/*.json",
+    "**/__pycache__",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+src = ["src", "tests"]
+extend-exclude = ["*.ipynb"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "C4"]
+
+[tool.mypy]
+# Type-check under 3.12 semantics (dependency stubs use PEP 695 syntax); runtime
+# 3.10 compatibility is enforced separately by ruff target-version and the CI
+# test matrix.
+python_version = "3.12"
+packages = ["wordlesmith"]
+strict = true
+warn_unused_configs = true
+
+[[tool.mypy.overrides]]
+module = ["matplotlib", "matplotlib.*", "numpy", "numpy.*"]
+ignore_missing_imports = true
+follow_imports = "skip"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.coverage.run]
+source = ["wordlesmith"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true

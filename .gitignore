@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Benchmark output. Only the official committed run is tracked, and within it
+# only the compact artifacts (CSV / Markdown / PNG / per-word). The large
+# combined JSON and the raw per-result checkpoints are regenerable, so ignore
+# them: `python scripts/run_official_benchmark.py` rebuilds everything.
+benchmarks/results/*
+!benchmarks/results/official/
+benchmarks/results/official/raw/
+benchmarks/results/official/*.json
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local planning / writing notes
+plan.html
+docs/blog-post.md
+docs/paper-outline.md
+docs/pypi-plan.md
+
+# Jupyter
+.ipynb_checkpoints/

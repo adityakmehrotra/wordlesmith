@@ -1,0 +1,4 @@
+package_version=0.1.0
+jobs=9
+valid_words=14855
+curated_words=2315

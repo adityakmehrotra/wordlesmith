@@ -1,0 +1,6 @@
+strategy,guess_pool,num_words,average,median,max,fails,fail_pct,turns_1,turns_2,turns_3,turns_4,turns_5,turns_6,turns_fail,wall_seconds,seed,package_version
+random,answers,14855,5.0609,5,7,2478,16.6813,0,147,1290,3843,4285,2812,2478,466.48,0,0.1.0
+frequency,answers,14855,4.9225,5,7,2164,14.5675,1,159,1548,4285,4316,2382,2164,94.77,0,0.1.0
+expected-size,answers,14855,4.5848,4,7,1570,10.5688,1,192,2362,5597,3540,1593,1570,1020.40,0,0.1.0
+minimax,answers,14855,4.6582,4,7,1677,11.2891,1,185,2198,5216,3839,1739,1677,995.18,0,0.1.0
+entropy,answers,14855,4.5234,4,7,1407,9.4716,1,213,2572,5632,3505,1525,1407,1150.13,0,0.1.0
