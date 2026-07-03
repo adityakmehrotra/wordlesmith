@@ -50,11 +50,11 @@ The core has no third-party dependencies. Plotting is the only extra.
 
 ```bash
 # From GitHub
-pip install "git+https://github.com/adityakmehrotra/Wordle-Solver"
+pip install "git+https://github.com/adityakmehrotra/wordlesmith"
 
 # For development (tests, lint, plots)
-git clone https://github.com/adityakmehrotra/Wordle-Solver
-cd Wordle-Solver
+git clone https://github.com/adityakmehrotra/wordlesmith
+cd wordlesmith
 pip install -e ".[dev,bench]"
 ```
 
@@ -228,7 +228,7 @@ python -m build && twine check dist/*
 
 Contributions welcome. A natural extension is adding a new strategy: implement `Strategy`,
 register it, and it shows up in `compare` automatically. Please open an
-[issue](https://github.com/adityakmehrotra/Wordle-Solver/issues) or PR.
+[issue](https://github.com/adityakmehrotra/wordlesmith/issues) or PR.
 
 ## License &amp; contact
 
@@ -239,9 +239,9 @@ Aditya Mehrotra. Reach me at `adi1.mehrotra@gmail.com` or on
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[ci-shield]: https://github.com/adityakmehrotra/Wordle-Solver/actions/workflows/ci.yml/badge.svg
-[ci-url]: https://github.com/adityakmehrotra/Wordle-Solver/actions/workflows/ci.yml
+[ci-shield]: https://github.com/adityakmehrotra/wordlesmith/actions/workflows/ci.yml/badge.svg
+[ci-url]: https://github.com/adityakmehrotra/wordlesmith/actions/workflows/ci.yml
 [python-shield]: https://img.shields.io/badge/python-3.10%2B-blue
 [python-url]: https://www.python.org/downloads/
 [license-shield]: https://img.shields.io/badge/license-MIT-green
-[license-url]: https://github.com/adityakmehrotra/Wordle-Solver/blob/main/LICENSE.txt
+[license-url]: https://github.com/adityakmehrotra/wordlesmith/blob/main/LICENSE.txt

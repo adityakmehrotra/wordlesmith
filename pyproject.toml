@@ -37,9 +37,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/adityakmehrotra/Wordle-Solver"
-Repository = "https://github.com/adityakmehrotra/Wordle-Solver"
-Issues = "https://github.com/adityakmehrotra/Wordle-Solver/issues"
+Homepage = "https://github.com/adityakmehrotra/wordlesmith"
+Repository = "https://github.com/adityakmehrotra/wordlesmith"
+Issues = "https://github.com/adityakmehrotra/wordlesmith/issues"
 
 [project.scripts]
 wordlesmith = "wordlesmith.cli:main"
