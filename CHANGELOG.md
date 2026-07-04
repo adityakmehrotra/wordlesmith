@@ -4,7 +4,7 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.1.0] - Unreleased
+## [0.1.0] - 2026-07-03
 
 First packaged release. Rewrites the original exploratory notebook into an
 installable, tested Python package with a CLI and a strategy-comparison
@@ -32,7 +32,8 @@ benchmark suite.
   extra.
 - Test suite (pytest) covering duplicate-letter scoring edge cases,
   pattern-consistency filtering, strategy selection, and the CLI.
-- GitHub Actions CI (lint, type-check, test matrix on Python 3.10-3.13, build).
+- GitHub Actions CI (lint, type-check, test matrix on Python 3.10-3.13, build)
+  and a tag-triggered PyPI release workflow using trusted publishing.
 
 ### Changed
 - The engine no longer tracks greens/yellows/grays with ad-hoc bookkeeping. The

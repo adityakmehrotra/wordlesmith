@@ -3,6 +3,7 @@
 <div align="center">
 
 [![CI][ci-shield]][ci-url]
+[![PyPI][pypi-shield]][pypi-url]
 [![Python 3.10+][python-shield]][python-url]
 [![MIT License][license-shield]][license-url]
 
@@ -49,6 +50,9 @@ The core has no third-party dependencies. Plotting is the only extra.
 ## Install
 
 ```bash
+# From PyPI
+pip install wordlesmith
+
 # From GitHub
 pip install "git+https://github.com/adityakmehrotra/wordlesmith"
 
@@ -241,6 +245,8 @@ Aditya Mehrotra. Reach me at `adi1.mehrotra@gmail.com` or on
 
 [ci-shield]: https://github.com/adityakmehrotra/wordlesmith/actions/workflows/ci.yml/badge.svg
 [ci-url]: https://github.com/adityakmehrotra/wordlesmith/actions/workflows/ci.yml
+[pypi-shield]: https://img.shields.io/pypi/v/wordlesmith
+[pypi-url]: https://pypi.org/project/wordlesmith/
 [python-shield]: https://img.shields.io/badge/python-3.10%2B-blue
 [python-url]: https://www.python.org/downloads/
 [license-shield]: https://img.shields.io/badge/license-MIT-green
